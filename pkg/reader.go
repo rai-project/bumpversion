@@ -10,6 +10,7 @@ var (
 	invalidConfig = errors.New("invalid .bumpversion.cfg")
 )
 
+// Read ...
 func Read(filePath string) (*BumpVersionConfig, error) {
 	p, err := configparser.NewConfigParserFromFile(filePath)
 

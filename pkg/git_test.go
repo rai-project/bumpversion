@@ -8,6 +8,7 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
+// TestTags ...
 func TestTags(t *testing.T) {
 	git, err := newGit(filepath.Dir(sourcepath.MustAbsoluteDir()))
 	assert.NoError(t, err)
